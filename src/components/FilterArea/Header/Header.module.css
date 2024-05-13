@@ -1,0 +1,26 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  background-color: var(--background-color);
+
+  .image {
+    max-width: 100%;
+    object-fit: cover;
+  }
+
+  .textWrap {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    font-weight: 400;
+    font-size: clamp(0.75rem, 0.706rem + 0.1408vw, 0.875rem);
+    line-height: 129%;
+  }
+}
+
+@container (max-width:1199px) {
+  .Header {
+    padding: 0.5rem;
+  }
+}

@@ -1,0 +1,44 @@
+.listArea {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background-color: #ffffff80;
+  border-radius: var(--border-radius);
+
+  .headerText {
+    flex: 0 0 auto;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: clamp(0.9375rem, 0.8275rem + 0.3521vw, 1.25rem);
+    line-height: 120%;
+    padding: 1rem;
+    background-color: var(--background-color);
+    margin: 0;
+    color: rgba(0, 0, 0, 0.85);
+  }
+  .cardWrapper {
+    flex: 1 0 auto;
+    padding: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: start;
+  }
+
+  .footer {
+    display: flex;
+    flex: 0 0 auto;
+    height: 56px;
+    background-color: #ffffff80;
+
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--border-radius);
+  }
+}
+
+@container (width < 1800px) {
+  .listArea {
+    .cardWrapper {
+      justify-content: center;
+    }
+  }
+}

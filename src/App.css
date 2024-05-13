@@ -1,0 +1,12 @@
+.headerText {
+  display: flex;
+  font-family: var(--font-family);
+  font-weight: 500;
+  align-items: center;
+  font-size: clamp(1rem, 0.8239rem + 0.5634vw, 1.5rem);
+  line-height: 117%;
+  background-color: var(--background-color);
+  border-radius: var(--border-radius);
+
+  color: #000;
+}

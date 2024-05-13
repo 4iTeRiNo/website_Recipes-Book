@@ -1,0 +1,59 @@
+.flexWrapper {
+  /* padding: 0 1.5rem 0; */
+  gap: 1.0625rem;
+}
+
+.inputWrapper {
+  width: 100%;
+  gap: 0.5rem;
+}
+
+.text {
+  width: 8rem;
+  text-wrap: wrap;
+  max-inline-size: 140px;
+  font-weight: 700;
+  text-align: right;
+}
+
+.select {
+  width: 285px;
+}
+
+.radioGroup {
+  width: 285px;
+  > label {
+    width: max-content;
+    text-align: center;
+    height: 100%;
+  }
+}
+
+.btn {
+  width: 200px;
+  justify-content: start;
+  background: transparent;
+  border: none;
+  font-size: 14px;
+  line-height: 157%;
+  color: #1890ff;
+  outline: none;
+  cursor: pointer;
+}
+
+@container (max-width:1199px) {
+  .inputWrapper {
+    flex-direction: column;
+    padding: 0.5rem;
+
+    .text {
+      width: 100%;
+      max-inline-size: none;
+      text-align: center;
+    }
+
+    .select {
+      width: 250px;
+    }
+  }
+}

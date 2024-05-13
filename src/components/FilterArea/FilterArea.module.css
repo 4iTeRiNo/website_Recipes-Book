@@ -1,0 +1,17 @@
+.filterArea {
+  flex-direction: column;
+  row-gap: 1.5rem;
+  flex: 0 0 auto;
+  max-width: 465px;
+  padding: 1.5rem;
+  background-color: var(--background-color);
+  border-radius: var(--border-radius);
+  color: #000;
+}
+
+@container (width < 1320px) {
+  .filterArea {
+    width: 300px;
+    padding: 0.5rem;
+  }
+}

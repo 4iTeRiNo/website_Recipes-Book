@@ -1,0 +1,46 @@
+.cardDish {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  width: clamp(375px, 24vw, 452px);
+  height: 354px;
+  background-color: var(--background-color);
+  border-radius: var(--border-radius);
+  border: 1px solid #fdfbfb;
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+
+  .image {
+    max-width: 100%;
+    object-fit: contain;
+  }
+
+  .textName {
+    font-size: clamp(0.875rem, 0.831rem + 0.1408vw, 1rem);
+    font-weight: 500;
+    line-height: 100%;
+  }
+
+  .textDescription {
+    font-family: var(--font-family);
+    text-wrap: balance;
+    font-size: clamp(0.625rem, 0.537rem + 0.2817vw, 0.875rem);
+    color: rgba(0, 0, 0, 0.45);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+  }
+
+  .infoBody {
+    padding: clamp(4.5%, 5vh, 5.334%);
+  }
+}
+
+@media (hover: hover) {
+  .cardDish:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease-in;
+  }
+}
